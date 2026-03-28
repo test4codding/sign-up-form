@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Norse";
+    src: url(./font/Norsebold.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root{
+    --light-gray: #E5E7EB;
+    --olive-green:#596D48;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    height: 100dvh;
+    display: flex;
+}
+
+.hero-left{
+    background-image: url(./images/leaf.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 100%;
+    position: relative;    
+}
+
+.logo-container{
+    font-family: Norse,sans-serif;
+    font-size: clamp(40px, 8vw, 160px);  
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    position: absolute;
+    top: 25%;
+    overflow: hidden;
+}
+
+.odin-logo{
+    height: 200px;
+    width: auto;
+}
+
+.credit{
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+.credit a{
+    color: white;
+}
+
+.quote-container{
+    height: 40%;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    background-color: rgba(0, 0, 0, 0.03)
+}
+
+.form-container{
+    height: 30%;
+    box-shadow: 0 8px 10px rgba(0, 0,0 , 0.15);
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.button-container{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding-left: 40px;
+    background-color: rgba(0, 0, 0, 0.03)
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.full-name,
+.contact,
+.password{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+label{
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+input{
+    width: 100%;
+    max-width: 300px;
+    padding-left: 10px;
+    font-family:sans-serif;
+    font-size: 24px;
+    border-radius: 4px;
+    border: 1px solid var(--light-gray)
+
+}
+
+input:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: blue;
+}
+
+input:focus:invalid{
+    outline: none;
+    box-shadow: none;
+    border-color: red;
+}
+
+.createBtn{
+    background-color: var(--olive-green);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 8px;
+    font-size: large;
+    max-width: fit-content;
+}
+
+.button-container a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--olive-green);
+}
